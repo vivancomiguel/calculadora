@@ -5,8 +5,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
+  <!-- CSS de bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- Uso de iconos de font-awezome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-  
+  <header class="container border text-center">
+    <h1>Calculadora</h1>
+  </header>
+  <main class="container border text-bg-secondary">
+    <div class="container border">
+      <section>
+        <div class="container border">
+          <div class="row">
+            <input type="text" class="text-bg-dark my-3" readonly>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 border text-center my-2">
+              <label for="valora">Inserta un n&uacute;mero:</label>
+              <input type="text" name="valora" id="valora">
+            </div>
+            <div class="col-6 border text-center my-2">
+              <label for="valorb">Inserta otro n&uacute;mero:</label>
+              <input type="text" name="valorb" id="valorb">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-3 border text-center my-3">
+              <button class="btn btn-primary">+</button>
+            </div>
+            <div class="col-3 border text-center my-3">
+              <button class="btn btn-primary">-</button>
+            </div>
+            <div class="col-3 border text-center my-3">
+              <button class="btn btn-primary">x</button>
+            </div>
+            <div class="col-3 border text-center my-3">
+              <button class="btn btn-primary">/</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="container border text-end">
+    <p>Practica de Generation</p>
+  </footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
