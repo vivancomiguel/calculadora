@@ -8,23 +8,27 @@ const btnrestar = document.getElementById("btnminus");
 const btnmultiplicar = document.getElementById("btnmul");
 const btndividir = document.getElementById("btndiv");
 
+/* Hace falta el arrow function */
+const suma = (v1, v2) => {
+  let a = parseInt(v1);
+  let b = parseInt(v2);
+  return a+b
+};
+
+const resta = (a, b) => a-b;
+
+const multiplica = (a, b) => a*b;
+const divide = (a, b) => a/b;
+
 btnsumar.addEventListener('click', function(){
-  const a = parseInt(valora.value);
-  const b = parseInt(valorb.value);
-  valorc.value = a+b;
+  valorc.value = suma(valora.value,valorb.value);
 });
 btnrestar.addEventListener('click', function(){
-  const a = parseInt(valora.value);
-  const b = parseInt(valorb.value);
-  valorc.value = a-b;
+  valorc.value = resta(valora.value,valorb.value);
 });
 btnmultiplicar.addEventListener('click', function(){
-  const a = parseInt(valora.value);
-  const b = parseInt(valorb.value);
-  valorc.value = a*b;
+  valorc.value = multiplica(valora.value,valorb.value);
 });
 btndividir.addEventListener('click', function(){
-  const a = parseInt(valora.value);
-  const b = parseInt(valorb.value);
-  valorc.value = a/b;
+  valorc.value = divide(valora.value,valorb.value);
 });
