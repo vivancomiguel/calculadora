@@ -1,3 +1,4 @@
+/* Elementos DOM */
 const valora = document.getElementById("valora");
 const valorb = document.getElementById("valorb");
 
@@ -8,7 +9,7 @@ const btnrestar = document.getElementById("btnminus");
 const btnmultiplicar = document.getElementById("btnmul");
 const btndividir = document.getElementById("btndiv");
 
-/* Hace falta el arrow function */
+/* Funciones flecha */
 const suma = (v1, v2) => {
   let a = parseInt(v1);
   let b = parseInt(v2);
@@ -20,6 +21,7 @@ const resta = (a, b) => a-b;
 const multiplica = (a, b) => a*b;
 const divide = (a, b) => a/b;
 
+/* Listeners */
 btnsumar.addEventListener('click', function(){
   valorc.value = suma(valora.value,valorb.value);
 });

@@ -12,63 +12,71 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
+  <!-- Contenedor de toda la pagina -->
   <div class="row h-100 w-100 m-0">
-  <div class="col align-self-center px-1 mx-sm-5 bg-light rounded-3">
-  <header class="container border-bottom text-center pt-2">
-    <h1>Calculadora</h1>
-  </header>
-  <main class="container px-5 py-3 fs-3">
-    <div class="container text-bg-secondary rounded-4">
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-sm-6  text-center my-2">
-              <label for="valora">Inserta un n&uacute;mero:</label>
-              <div class="row justify-content-center my-2">
-                <input type="number" name="valora" id="valora" class="card">
+    <!-- Caja contenedora de la calculadora -->
+    <div class="col align-self-center px-1 mx-sm-5 bg-light rounded-3">
+      <!-- Encabezado -->
+      <header class="container border-bottom text-center pt-2">
+        <h1>Calculadora</h1>
+      </header>
+      <!-- Parte funcional -->
+      <main class="container px-5 py-3 fs-3">
+        <div class="container text-bg-secondary rounded-4">
+          <!-- Seccion de entradas -->
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-6  text-center my-2">
+                  <label for="valora">Inserta un n&uacute;mero:</label>
+                  <div class="row justify-content-center my-2">
+                    <input type="number" name="valora" id="valora" class="card">
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6  text-center my-2">
+                  <label for="valorb">Inserta otro n&uacute;mero:</label>
+                  <div class="row justify-content-center my-2">
+                    <input type="number" name="valorb" id="valorb" class="card">
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6  text-center my-2">
-              <label for="valorb">Inserta otro n&uacute;mero:</label>
-              <div class="row justify-content-center my-2">
-                <input type="number" name="valorb" id="valorb" class="card">
+          </section>
+          <!-- Seccion de salida -->
+          <section>
+            <div class="container border-4">
+              <div class="row mx-sm-5 my-3">
+                <input type="number" class="text-bg-dark text-end" placeholder="0" id="valorc" disabled>
               </div>
             </div>
-          </div>
+          </section>
+          <!-- Botones -->
+          <section>
+            <div class="container">
+              <div class="row my-2 pb-2">
+                <div class="col-6 col-sm-3  text-center my-1">
+                  <button class="btn btn-danger rounded-5" id="btnplus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="col-6 col-sm-3  text-center my-1">
+                  <button class="btn btn-danger rounded-5" id="btnminus"><i class="fa-solid fa-minus"></i></button>
+                </div>
+                <div class="col-6 col-sm-3  text-center my-1">
+                  <button class="btn btn-danger rounded-5" id="btnmul"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="col-6 col-sm-3  text-center my-1">
+                  <button class="btn btn-danger rounded-5" id="btndiv"><i class="fa-solid fa-divide"></i></button>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-      <section>
-        <div class="container border-4">
-          <div class="row mx-sm-5 my-3">
-            <input type="number" class="text-bg-dark text-end" placeholder="0" id="valorc" disabled>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <div class="row my-2 pb-2">
-            <div class="col-6 col-sm-3  text-center my-1">
-              <button class="btn btn-danger rounded-5" id="btnplus"><i class="fa-solid fa-plus"></i></button>
-            </div>
-            <div class="col-6 col-sm-3  text-center my-1">
-              <button class="btn btn-danger rounded-5" id="btnminus"><i class="fa-solid fa-minus"></i></button>
-            </div>
-            <div class="col-6 col-sm-3  text-center my-1">
-              <button class="btn btn-danger rounded-5" id="btnmul"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="col-6 col-sm-3  text-center my-1">
-              <button class="btn btn-danger rounded-5" id="btndiv"><i class="fa-solid fa-divide"></i></button>
-            </div>
-          </div>
-        </div>
-      </section>
+      </main>
+      <!-- Descripcion -->
+      <footer class="container border-top text-end">
+        <p class="text-secondary">Practica de Generation</p>
+      </footer>
     </div>
-  </main>
-  <footer class="container border-top text-end">
-    <p class="text-secondary">Practica de Generation</p>
-  </footer>
-</div>
-</div>
+  </div>
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./script.js"></script>
 </body>
