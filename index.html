@@ -7,59 +7,68 @@
   <title>Calculadora</title>
   <!-- CSS de bootstrap -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <!-- Uso de iconos de font-awezome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-  <header class="container border text-center">
+  <div class="row h-100 w-100 m-0">
+  <div class="col align-self-center px-1 mx-sm-5 bg-light rounded-3">
+  <header class="container border-bottom text-center pt-2">
     <h1>Calculadora</h1>
   </header>
-  <main class="container border text-bg-secondary">
-    <div class="container border">
-      <section>
-        <div class="container border">
-          <div class="row">
-            <input type="text" class="text-bg-dark my-3" readonly>
-          </div>
-        </div>
-      </section>
+  <main class="container px-5 py-3 fs-3">
+    <div class="container text-bg-secondary rounded-4">
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-6 border text-center my-2">
+            <div class="col-12 col-sm-6  text-center my-2">
               <label for="valora">Inserta un n&uacute;mero:</label>
-              <input type="text" name="valora" id="valora">
+              <div class="row justify-content-center my-2">
+                <input type="number" name="valora" id="valora" class="card">
+              </div>
             </div>
-            <div class="col-6 border text-center my-2">
+            <div class="col-12 col-sm-6  text-center my-2">
               <label for="valorb">Inserta otro n&uacute;mero:</label>
-              <input type="text" name="valorb" id="valorb">
+              <div class="row justify-content-center my-2">
+                <input type="number" name="valorb" id="valorb" class="card">
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section>
+        <div class="container border-4">
+          <div class="row mx-sm-5 my-3">
+            <input type="number" class="text-bg-dark text-end" placeholder="0" disabled>
+          </div>
+        </div>
+      </section>
+      <section>
         <div class="container">
-          <div class="row">
-            <div class="col-3 border text-center my-3">
-              <button class="btn btn-primary">+</button>
+          <div class="row my-2 pb-2">
+            <div class="col-6 col-sm-3  text-center my-1">
+              <button class="btn btn-danger rounded-5"><i class="fa-solid fa-plus"></i></button>
             </div>
-            <div class="col-3 border text-center my-3">
-              <button class="btn btn-primary">-</button>
+            <div class="col-6 col-sm-3  text-center my-1">
+              <button class="btn btn-danger rounded-5"><i class="fa-solid fa-minus"></i></button>
             </div>
-            <div class="col-3 border text-center my-3">
-              <button class="btn btn-primary">x</button>
+            <div class="col-6 col-sm-3  text-center my-1">
+              <button class="btn btn-danger rounded-5"><i class="fa-solid fa-xmark"></i></button>
             </div>
-            <div class="col-3 border text-center my-3">
-              <button class="btn btn-primary">/</button>
+            <div class="col-6 col-sm-3  text-center my-1">
+              <button class="btn btn-danger rounded-5"><i class="fa-solid fa-divide"></i></button>
             </div>
           </div>
         </div>
       </section>
     </div>
   </main>
-  <footer class="container border text-end">
-    <p>Practica de Generation</p>
+  <footer class="container border-top text-end">
+    <p class="text-secondary">Practica de Generation</p>
   </footer>
+</div>
+</div>
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
